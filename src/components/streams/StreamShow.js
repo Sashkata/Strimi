@@ -30,7 +30,7 @@ class StreamShow extends React.Component {
 
     this.player = flv.createPlayer({
       type: "flv",
-      url: `https://73.22.64.107/live/${this.props.match.params.id}.flv`,
+      url: `https://73.22.64.107:25546/live/${this.props.match.params.id}.flv`,
     });
     this.player.attachMediaElement(this.videoRef.current);
     this.player.load();
